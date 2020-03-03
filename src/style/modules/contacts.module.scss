@@ -1,0 +1,51 @@
+@import '../colors.scss';
+@import '../spaces.scss';
+@import '../typography.scss';
+
+.contacts{
+    margin: $spacer*3 0;
+
+    @media screen and (min-width: 768px){
+        margin: $spacer*4 0;
+    }
+
+    @media screen and (min-width: 960px){
+        margin: $spacer*5 0;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin: $spacer*8 0;
+    }
+
+    .sectionDescription{
+
+        @media screen and (min-width: 960px){
+            width: 75%;
+        }
+
+        @media screen and (min-width: 1280px){
+            width: 50%;
+        }
+    }
+
+    .contactsList{
+        margin: $spacer*2 0;
+
+        @media screen and (min-width: 960px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $spacer*2;
+        }
+
+        ul{
+            li{
+                display: inline-block;
+
+                a{
+                    margin-right: $spacer;
+                }
+            }
+        }
+    }
+
+}

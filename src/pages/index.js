@@ -1,3 +1,21 @@
 import React from "react"
+// import components
+import Layout from '../components/layout'
+import PostsList from "../components/postsList"
+import Title from "../components/titles"
+import Experiments from "../components/experiments"
 
-export default () => <div>Hello world!</div>
+import '../style/style.scss'
+
+const IndexPage = () => {
+
+    return (
+        <Layout>
+            <Title />
+            <PostsList />
+            <Experiments />
+        </Layout>
+    )
+}
+
+export default IndexPage

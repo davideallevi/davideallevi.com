@@ -1,0 +1,25 @@
+$spacer: 1em;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body{
+        background-color: #20302b;
+        color: white;
+        font-size: 24px;
+        margin: 0 $spacer;
+        overflow-x: hidden;
+        
+        @media screen and (min-width: 768px) {
+            margin: 0 $spacer*2;
+        }
+        @media screen and (min-width: 960px) {
+            margin: 0 $spacer*3;
+        }
+        @media screen and (min-width: 1280px) {
+            margin: 0 $spacer*4;
+        }
+    }
+}

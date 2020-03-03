@@ -1,0 +1,14 @@
+@import '../colors.scss';
+@import '../spaces.scss';
+@import '../typography.scss';
+
+.social{
+    @media screen and (max-width: 960px) {
+        padding-top: $spacer*2;
+    }
+    p{
+        padding: $spacer 0;
+        border-bottom: 1px solid;
+        border-color:rgba(255,255,255,0.1);
+    }
+}

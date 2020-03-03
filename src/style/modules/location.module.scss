@@ -1,0 +1,27 @@
+@import '../colors.scss';
+@import '../spaces.scss';
+@import '../typography.scss';
+
+.location{
+
+    span{
+        font-size: 14px;
+        opacity: .5;
+    }
+
+    .locationItem{
+        display: inline-block;
+        font-size: 14px;
+        color: $color__accent;
+        animation: pulse 1s ease-in-out infinite alternate-reverse;
+
+        @keyframes pulse {
+            0% {
+                opacity: .3;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import '../colors.scss';
+@import '../spaces.scss';
+@import '../typography.scss';
+
+.projects{
+    margin: $spacer*3 0;
+    border-bottom: 1px solid;
+    border-color:rgba(255,255,255,0.1);
+    
+    @media screen and (min-width: 960px) {
+        margin: $spacer*5 0;
+    }
+    
+    .singleItem{
+        position: relative;
+        border-top: 1px solid;
+        border-color:rgba(255,255,255,0.1);
+        transition: all .5s ease-in-out .1s;
+    
+        h3{
+            padding: $spacer 0;
+            transition: all .5s ease-out;
+            display: inline-block;
+            @media screen and (min-width: 768px) {
+                padding: $spacer*2 0;
+            }
+
+            &:after{
+                content: '';
+                display: block;
+                position: relative;
+                width: 0;
+                height: 1px;
+                background-color: rgba(255,255,255,.1);
+                float: left;
+                transition: all .5s ease-in-out .2s;
+                margin: .6em 0 0 0;
+            }
+        }
+
+        span{
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: block;
+                font-size: 12px;
+                margin: $spacer;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    
+        .projectLink{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+    
+        .projectImage{
+            position: absolute !important;
+            width: 40%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-30%, -50%);
+            opacity: 0;
+            z-index: -1;
+            transition: all .3s ease-out .3s;
+        }
+    
+        @media screen and (min-width: 1280px){
+            &:hover{
+                border-color:rgba(255,255,255,0.5);
+
+                h3{
+
+                    &:after{
+                        width: $spacer*2;
+                        margin: .6em 1em 0 0;
+                    }
+                }
+    
+                &>.projectImage{
+                    opacity: 1;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
