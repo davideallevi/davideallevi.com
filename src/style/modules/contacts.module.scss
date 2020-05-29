@@ -3,19 +3,13 @@
 @import '../typography.scss';
 
 .contacts{
-    margin: $spacer*3 0;
-
-    @media screen and (min-width: 768px){
-        margin: $spacer*4 0;
+    padding: $spacer 0;
+    margin: $spacer 0;
+    @media screen and (min-width: 768px) {
+        padding: $spacer*3 0;
+        margin: $spacer*3 0;
     }
-
-    @media screen and (min-width: 960px){
-        margin: $spacer*5 0;
-    }
-
-    @media screen and (min-width: 1280px){
-        margin: $spacer*8 0;
-    }
+    position: relative;
 
     .sectionDescription{
 
@@ -45,6 +39,29 @@
                     margin-right: $spacer;
                 }
             }
+        }
+    }
+
+    .profileImageContainer{
+        position: absolute;
+        width: 192px;
+        height: 256px;
+        right: 0;
+        transform: translateY(-100%);
+        overflow: hidden;
+        z-index: -1;
+
+        @media screen and (min-width: 960px) {
+            transform: translateY(-80%);
+            width: 240px;
+            height: 320px;
+        }
+    
+        .profileImage{
+            position: absolute;
+            height: auto;
+            width: 100%;
+            opacity: .5;
         }
     }
 

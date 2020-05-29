@@ -4,18 +4,18 @@ $font__primary: 'Karla', sans-serif;
     font-family: $font__primary;
 
     ::selection {
-        background: $color__accent;
-        color: white;
+        color: $color__accent;
+        background-color: rgba(255, 255, 255, 0);
     }
 
     h1, h2{
         font-size: 24px;
         font-weight: 400;
         @media screen and (min-width: 768px){
-            font-size: 36px;
+            font-size: 28px;
         }
         @media screen and (min-width: 960px){
-            font-size: 42px;
+            font-size: 36px;
         }
         @media screen and (min-width: 1280px){
             font-size: 48px;
@@ -26,11 +26,17 @@ $font__primary: 'Karla', sans-serif;
         color: $color__accent;
     }
 
-    h3{
+    h4{
         font-weight: 400;
-        font-size: 24px;
+        font-size: 18px;
         @media screen and (min-width: 768px){
-            font-size: 36px;
+            font-size: 24px;
+        }
+        @media screen and (min-width: 960px){
+            font-size: 28px;
+        }
+        @media screen and (min-width: 1280px){
+            font-size: 32px;
         }
     }
 
@@ -39,14 +45,14 @@ $font__primary: 'Karla', sans-serif;
         font-size: 12px;
         opacity: .5;
         letter-spacing: .1em;
-        margin: $spacer 0;
+        padding: $spacer 0;
     }
 
     .sectionDescription{
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
         @media screen and (min-width: 768px){
-            font-size: 28px;
+            font-size: 24px;
         }
 
         span{
@@ -80,5 +86,9 @@ $font__primary: 'Karla', sans-serif;
 
     ul{
         list-style: none;
+    }
+
+    .cta{
+        margin: $spacer 0;
     }
 }

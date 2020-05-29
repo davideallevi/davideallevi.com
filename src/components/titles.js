@@ -3,6 +3,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 // Style module
 import titleStyle from '../style/modules/titles.module.scss'
+//import Typed from 'typed.js';
 
 const Titles = () => {
 

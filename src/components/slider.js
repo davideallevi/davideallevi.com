@@ -34,7 +34,7 @@ const Slider = () => {
 
     return (
         <Carousel
-            slidesPerPage={4.5}
+            slidesPerPage={3}
             infinite
             autoPlay={2000}
             animationSpeed={500}
@@ -42,19 +42,19 @@ const Slider = () => {
             centered={false}
             breakpoints={{
                 1280: {
-                  slidesPerPage: 3.5,
+                  slidesPerPage: 3,
                   infinite: true,
                   keepDirectionWhenDragging: true,
                   stopAutoPlayOnHover: true,
                 },
                 768: {
-                  slidesPerPage: 2.5,
+                  slidesPerPage: 2,
                   infinite: true,
                   keepDirectionWhenDragging: true,
                   stopAutoPlayOnHover: true,
                 },
                 540: {
-                  slidesPerPage: 1.25,
+                  slidesPerPage: 1.1,
                   infinite: true,
                   autoPlay: 4000,
                   animationSpeed: 1000,
@@ -65,7 +65,7 @@ const Slider = () => {
         >
             {experimentsImages.allFile.edges.map((edge) => {
                 return (
-                    <Img fluid={edge.node.childImageSharp.fluid} alt="ui design, ux design, ui animation, motion graphic, interaction design, user interface, user experience" className={sliderStyle.experimentImage} />
+                  <Img fluid={edge.node.childImageSharp.fluid} alt="ui design, ux design, ui animation, motion graphic, interaction design, user interface, user experience" className={sliderStyle.experimentImage} />
                 )
             })}
         </Carousel>

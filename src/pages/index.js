@@ -3,7 +3,7 @@ import React from "react"
 import Layout from '../components/layout'
 import PostsList from "../components/postsList"
 import Title from "../components/titles"
-import Experiments from "../components/experiments"
+//import Experiments from "../components/experiments"
 
 import '../style/style.scss'
 
@@ -13,7 +13,6 @@ const IndexPage = () => {
         <Layout>
             <Title />
             <PostsList />
-            <Experiments />
         </Layout>
     )
 }

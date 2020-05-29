@@ -3,16 +3,19 @@
 @import '../typography.scss';
 
 footer{
-    padding: $spacer*2 0;
+    margin: $spacer*2 0;
     @media screen and (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: $spacer*3;
     }
 
-    .author{
-        display: block;
-        text-align: right;
+    .siteInfo{
+        margin: $spacer 0;
         font-size: 14px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: right;
+        }
     }
 }

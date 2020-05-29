@@ -22,15 +22,24 @@ const ExperiencesList = () => {
     `)
 
     return (
-        <section className={experienceStyle.experiences}>
-            <p className="sectionTitle" >Work experience:</p>
-            <ul>
+        <section className={experienceStyle.experiences}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-offset="100"
+            >
+            <h3 className="sectionTitle" >Work experience:</h3>
+            <ul className={experienceStyle.list}>
                 {ExperiencesData.allExperiencesJson.edges.map((edge) => {
                     return (
-                        <li key={edge.node.path} >
-                            <p className={experienceStyle.singleExperience}>{edge.node.role}</p>
-                            <p className={experienceStyle.singleExperiencePlace}>{edge.node.at} - {edge.node.where}</p>
-                            <p className={experienceStyle.singleExperienceDates}>{edge.node.from} / {edge.node.to}</p>
+                        <li key={edge.node.path}
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            >
+                            <h4 className={experienceStyle.singleExperience}>{edge.node.role}</h4>
+                            <div className={experienceStyle.singleExperiencePlace}>
+                                <span>{edge.node.at}</span> - <span className={experienceStyle.singleExperienceCity}>{edge.node.where}</span>
+                            </div>
+                            <span className={experienceStyle.singleExperienceDates}>{edge.node.from} / {edge.node.to}</span>
                         </li>
                     )
                 })}

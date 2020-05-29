@@ -3,5 +3,10 @@
 @import '../typography.scss';
 
 .titles{
-    padding: 20vh 0 10vh 0;
+    text-align: left;
+    padding: $spacer*3 0 $spacer*5 0;
+
+    @media screen and (min-width: 768px){
+        text-align: center;
+    }
 }

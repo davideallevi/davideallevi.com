@@ -3,17 +3,39 @@
 @import '../typography.scss';
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 $spacer;
+    z-index: 2;
+    @media screen and (min-width: 768px){
+        padding: 0 $spacer*2;
+    }
+    @media screen and (min-width: 960px){
+        padding: 0 $spacer*3;
+    }
+    @media screen and (min-width: 1280px){
+        padding: 0 $spacer*4;
+    }
 
     nav{
-        margin: 2em 0 1em 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin: $spacer 0;
+
+        @media screen and (min-width: 768px){
+            padding: $spacer*2 0;
+        }
+    
 
         .navLinkHome{
             text-transform: uppercase;
             font-style: initial;
             letter-spacing: .1em;
             font-size: 14px;
+            padding: $spacer;
+            &:hover{
+                opacity: .5;
+            }
         }
 
         .navLinkAbout{
@@ -22,13 +44,15 @@ header{
             letter-spacing: .1em;
             text-align: right;
             font-size: 14px;
+            padding: $spacer;
+            float: right;
+            &:hover{
+                opacity: .5;
+            }
         }
 
         .activeNavLink{
-            opacity: .5;
-            &:hover{
-                opacity: 1;
-            }
+            color: $color__accent;
         }
     }
 }

@@ -8,8 +8,8 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <Link className={headerStyles.navLinkHome} activeClassName={headerStyles.activeNavLink} to="/">davideallevi</Link>
-                <Link className={headerStyles.navLinkAbout} activeClassName={headerStyles.activeNavLink} to ="/about">More</Link>
+                <Link className={headerStyles.navLinkHome} activeClassName={headerStyles.activeNavLink} to="/">projects</Link>
+                <Link className={headerStyles.navLinkAbout} activeClassName={headerStyles.activeNavLink} to ="/about">about</Link>
             </nav>
         </header>
     )

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Freelance Digital Designer',
-    description: 'I design and develop digital products, strategies and identities tailored on brands.',
+    title: "Davide Allevi - Freelance digital designer",
+    description: 'I craft digital experiences that fits brands.',
     author: 'davideallevi'
   },
   plugins: [

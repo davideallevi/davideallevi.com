@@ -4,13 +4,21 @@
 
 .experimentImage{
     width: 100%;
-    margin: $spacer 0;
+    margin: $spacer*5 $spacer/3 0 $spacer/3;
     transition: all .3s ease-in;
     &:hover{
         transform: translateY(-$spacer);
     }
 
-    @media screen and (min-width: 960px) {
-        margin: $spacer*2 0;
+    @media screen and (min-width: 768px){
+        margin: $spacer*2 $spacer/2 0 $spacer/2;
+    }
+
+    @media screen and (min-width: 960px){
+        margin: $spacer*3 $spacer/2 0 $spacer/2;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin: $spacer*5 $spacer 0 $spacer;
     }
 }

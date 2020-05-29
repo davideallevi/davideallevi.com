@@ -1,14 +1,17 @@
 [{
-    "skill": "Information architecture & User flows and Scenarios"
+    "skill": "User experience design",
+    "specifics": "Information architecture, user flows, scenarios, usability test"
   },{
-    "skill": "Wireframes and Prototypes"
+    "skill": "User interface design",
+    "specifics": "UI components, design systems, wireframing, prototyping"
   },{
-    "skill": "Design Systems"
+    "skill": "Web development",
+    "specifics": "UI components, websites, webapp"
   },{
-    "skill": "Interactions and animations"
+    "skill": "Branding & Art direction",
+    "specifics": "Logo, corporate identity, contents creation, copy writing"
   },{
-    "skill": "Frontend development"
-  },{
-    "skill": "Branding & Online communication"
+    "skill": "Online communication",
+    "specifics": "Digital marketing, social, Google"
   }
 ]

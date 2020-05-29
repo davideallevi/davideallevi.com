@@ -5,8 +5,10 @@ const Email = () => {
 
     return (
         <div className={emailStyle.email}>
-            <p className="sectionTitle">Send me an E-mail</p>
-            <a href="mailto:allevi.daviel2@gmail.com">allevi.daviel2@gmail.com</a>
+            <h3 className="sectionTitle">e-mail</h3>
+            <span>
+                <a href="mailto:allevi.daviel2@gmail.com">allevi.daviel2@gmail.com</a>
+            </span>
         </div>
     )
 }
