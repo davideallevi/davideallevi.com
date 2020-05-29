@@ -31,7 +31,7 @@ const ExperiencesList = () => {
             <ul className={experienceStyle.list}>
                 {ExperiencesData.allExperiencesJson.edges.map((edge) => {
                     return (
-                        <li key={edge.node.path}
+                        <li key={edge.node.id}
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
                             >

@@ -65,7 +65,7 @@ const Slider = () => {
         >
             {experimentsImages.allFile.edges.map((edge) => {
                 return (
-                  <Img fluid={edge.node.childImageSharp.fluid} alt="ui design, ux design, ui animation, motion graphic, interaction design, user interface, user experience" className={sliderStyle.experimentImage} />
+                  <Img key={edge.node.id} fluid={edge.node.childImageSharp.fluid} alt="ui design, ux design, ui animation, motion graphic, interaction design, user interface, user experience" className={sliderStyle.experimentImage} />
                 )
             })}
         </Carousel>

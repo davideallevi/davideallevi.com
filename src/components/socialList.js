@@ -24,7 +24,7 @@ const SocialList = () => {
             <ul>
                 {socialData.allSocialJson.edges.map((edge) => {
                     return (
-                        <li>
+                        <li key={edge.node.id}>
                             <a href={edge.node.link} target="blank_">{edge.node.social}</a>
                         </li>
                     )

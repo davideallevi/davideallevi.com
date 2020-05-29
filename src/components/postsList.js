@@ -56,7 +56,8 @@ const PostsList = () => {
             <ul>
                 {postsData.allMarkdownRemark.edges.map((edge) => {
                     return (
-                        <li className={postListStyle.singleItem}
+                        <li key={edge.node.id}
+                            className={postListStyle.singleItem}
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom"
                             >
