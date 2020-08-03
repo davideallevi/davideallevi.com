@@ -22,19 +22,12 @@ const ExperiencesList = () => {
     `)
 
     return (
-        <section className={experienceStyle.experiences}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="100"
-            >
+        <section className={experienceStyle.experiences}>
             <h3 className="sectionTitle" >Work experience:</h3>
             <ul className={experienceStyle.list}>
                 {ExperiencesData.allExperiencesJson.edges.map((edge) => {
                     return (
-                        <li key={edge.node.id}
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            >
+                        <li key={edge.node.id}>
                             <h4 className={experienceStyle.singleExperience}>{edge.node.role}</h4>
                             <div className={experienceStyle.singleExperiencePlace}>
                                 <span>{edge.node.at}</span> - <span className={experienceStyle.singleExperienceCity}>{edge.node.where}</span>

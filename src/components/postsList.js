@@ -8,13 +8,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 // Style module
 import postListStyle from '../style/modules/projects.module.scss'
-// AOS Scroll Animation Library
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const PostsList = () => {
-
-    AOS.init();
 
     const postsData = useStaticQuery(graphql`
         query {
@@ -47,20 +42,13 @@ const PostsList = () => {
 
     return (
         <section
-            className={postListStyle.projects}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="100"
-            >
+            className={postListStyle.projects}>
             <h3 className="sectionTitle">Latest works:</h3>
             <ul>
                 {postsData.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li key={edge.node.id}
-                            className={postListStyle.singleItem}
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            >
+                            className={postListStyle.singleItem}>
                             <h4>{edge.node.frontmatter.title}<span className={postListStyle.projectDate}>{edge.node.frontmatter.date}</span></h4>
                             <span className={postListStyle.projectCategory}>{edge.node.frontmatter.category}</span>
                             <a href={edge.node.frontmatter.link} target="_blank" rel="noopener noreferrer" className={postListStyle.projectLink} ><div></div></a>

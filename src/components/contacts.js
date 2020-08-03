@@ -10,7 +10,7 @@ import profileImage from "../images/about/min.jpg"
 const Contacts = () => {
 
     return (
-        <section data-aos="fade-up" data-aos-anchor-placement="center-bottom" className={contactsStyles.contacts}>
+        <section className={contactsStyles.contacts}>
             <p className={contactsStyles.sectionDescription}>
                 <span className={contactsStyles.state}>Currently available</span> for short and long term collaborations all around the globe, also remotly. Need a hand? <span>Feel free to contact me.</span>
             </p>

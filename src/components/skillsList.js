@@ -19,19 +19,12 @@ const SkillsList = () => {
     `)
 
     return (
-        <section className={skillsStyle.skills}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="100"
-            >
+        <section className={skillsStyle.skills}>
             <h3 className="sectionTitle">What I do best:</h3>
             <ul>
                 {skillsData.allSkillsJson.edges.map((edge) => {
                     return (
-                        <li key={edge.node.id}
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            >
+                        <li key={edge.node.id}>
                             <h4 className={skillsStyle.singleSkill}>{edge.node.skill}</h4><br />
                             <span className={skillsStyle.singleSkillSpecifics}>{edge.node.specifics}</span>
                         </li>

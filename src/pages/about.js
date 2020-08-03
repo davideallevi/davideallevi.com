@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 //import PersonalInfo from "../components/personalInfo"
 import SkillsList from '../components/skillsList'
 import ExperiencesList from '../components/experiencesList'
-import Slider from '../components/slider'
+//import Slider from '../components/slider'
 // Style module
 import aboutStyle from '../style/modules/about.module.scss'
 
@@ -19,7 +19,6 @@ const AboutPage = () => {
                     I like to explore and experiment the latest design tools and development technologies to always improve my work process, designing and coding modern and useful <a href="https://dribbble.com/davideallevi" target="blank_">interactions and visual effects</a>.
                 </p>
             </section>
-            <Slider />
             <SkillsList />
             <ExperiencesList />
         </Layout>
