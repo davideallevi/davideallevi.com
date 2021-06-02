@@ -18,9 +18,9 @@ const Contacts = () => {
                 <Email />
                 <SocialList />
             </div>
-            <div className={contactsStyles.profileImageContainer}>
+            {/*<div className={contactsStyles.profileImageContainer}>
                 <img src={profileImage} className={contactsStyles.profileImage} alt="davide allevi, digital designer, freelancer, ui designer, ux designer, frontend developer, web designer, graphic designer, italian designer, designer milan" />
-            </div>
+            </div>*/}
         </section>
     )
 }

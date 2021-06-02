@@ -7,7 +7,7 @@ const Email = () => {
         <div className={emailStyle.email}>
             <h3 className="sectionTitle">e-mail</h3>
             <span>
-                <a href="mailto:allevi.daviel2@gmail.com">allevi.daviel2@gmail.com</a>
+                <a href="mailto:project@davideallevi.it">project@davideallevi.it</a>
             </span>
         </div>
     )

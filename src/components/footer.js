@@ -22,7 +22,7 @@ const Footer = () => {
         <footer className={footerStyles.footer} >
             <Location />
             <div className={footerStyles.siteInfo}>
-                {metaData.site.siteMetadata.author}©2020
+                {metaData.site.siteMetadata.author}©2021
             </div>
         </footer>
     )
