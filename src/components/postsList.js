@@ -23,16 +23,6 @@ const PostsList = () => {
                             category
                             date
                             link
-                            image {
-                                childImageSharp {
-                                    fluid(
-                                        maxWidth: 800,
-                                    ) {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                            imageAlt
                         }
                     }
                 }
