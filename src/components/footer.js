@@ -22,7 +22,7 @@ const Footer = () => {
         <footer className={footerStyles.footer} >
             <Location />
             <div className={footerStyles.siteInfo}>
-                {metaData.site.siteMetadata.author}©2021
+                {metaData.site.siteMetadata.author}©2021 | <a href="https://github.com/davideallevi/davideallevi.com" target="_blank">Source Code</a>
             </div>
         </footer>
     )
